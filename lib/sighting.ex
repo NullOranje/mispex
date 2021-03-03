@@ -14,6 +14,11 @@ defmodule MISP.Sighting do
   typedstruct do
     field :id, String.t()
     field :uuid, String.t()
+    field :source, String.t()
+    field :attribute_id, String.t()
+    field :event_id, String.t()
+    field :org_id, String.t()
+    field :date_sighting, String.t()
     field :value, String.t()
     field :values, list(String.t())
     field :timestamp, non_neg_integer()
